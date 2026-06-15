@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U12137 - Machine Vision Lab</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNRF65VS2H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GNRF65VS2H');
+</script>
+<style>
+:root{
+  --bg:#050505;
+  --fg:#f4f4f5;
+  --muted:#a1a1aa;
+  --line:#242428;
+  --accent:#7dd3fc;
+  --accent-2:#a7f3d0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  min-height:100%;
+  background:
+    radial-gradient(circle at 18% 0%,rgba(125,211,252,.14),transparent 28rem),
+    linear-gradient(180deg,#09090b 0%,var(--bg) 42%);
+  color:var(--fg);
+  font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:64px 22px 32px}
+.topline{
+  display:inline-grid;
+  grid-template-columns:auto 1fr;
+  align-items:flex-start;
+  column-gap:12px;
+  margin-bottom:72px;
+  color:var(--muted);
+  font-size:13px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.identity{
+  display:grid;
+  gap:4px;
+}
+.identity span{display:block}
+.signal{
+  display:grid;
+  gap:4px;
+  grid-template-rows:repeat(4,1.65em);
+  padding-top:.05em;
+  justify-items:center;
+}
+.mark{
+  width:10px;
+  height:10px;
+  align-self:center;
+  border-radius:50%;
+  background:var(--accent-2);
+  box-shadow:0 0 22px var(--accent-2);
+  opacity:.62;
+  transform:scale(1);
+}
+header{max-width:760px;margin-bottom:56px}
+h1{font-size:clamp(25px,4.9vw,53px);line-height:1;margin:0 0 18px;letter-spacing:0}
+.lead{max-width:620px;margin:0;color:var(--muted);font-size:clamp(18px,2.4vw,24px)}
+main{display:grid;gap:34px}
+section{border-top:1px solid var(--line);padding-top:28px}
+h2{margin:0 0 12px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-2)}
+p{margin:0 0 16px}
+.focus{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.team{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px;
+  margin-top:18px;
+}
+.pill{
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:.45rem .72rem;
+  color:var(--fg);
+  background:rgba(255,255,255,.03);
+}
+.member{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:14px;
+  min-height:132px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:16px;
+  color:var(--fg);
+  background:rgba(255,255,255,.025);
+}
+.member h3{
+  margin:0 0 4px;
+  font-size:18px;
+  line-height:1.25;
+  font-weight:650;
+}
+.role{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+.profiles{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.profile{
+  color:var(--accent);
+  font-size:13px;
+  font-weight:650;
+}
+.profile:hover{text-decoration:underline;text-underline-offset:3px}
+.showcase{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-top:4px;
+  font-weight:650;
+}
+.showcase::after{content:"->";color:var(--accent-2)}
+.contact{color:var(--muted)}
+.contact strong{color:var(--fg);font-weight:650}
+footer{border-top:1px solid var(--line);margin-top:54px;padding-top:20px;color:var(--muted);font-size:14px}
+@media (max-width:640px){
+  .wrap{padding-top:36px}
+  .topline{margin-bottom:50px}
+  .pill{width:100%}
+  .team{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topline">
+    <div class="signal" aria-hidden="true">
+      <span class="mark"></span>
+      <span class="mark"></span>
+      <span class="mark"></span>
+      <span class="mark"></span>
+    </div>
+    <div class="identity" aria-label="Lab affiliation">
+      <span>Machine Vision Lab</span>
+      <span>Department of Instrumentation and Control Engineering</span>
+      <span>Faculty of Mechanical Engineering</span>
+      <span>Czech Technical University in Prague</span>
+    </div>
+  </div>
+
+  <header>
+    <h1>U12137 - Machine Vision Lab</h1>
+    <p class="lead">Practical computer vision and data pipeline design.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>We design real-time machine vision systems built to perform reliably in challenging environments. In parallel, we conduct research in applied AI and machine vision to advance practical solutions for real-world challenges.</p>
+      <a class="showcase" href="https://cvut-fs-12110.github.io/mv-metallurgy-showcase/">Machine Vision Applications in Metallurgy</a>
+    </section>
+
+    <section>
+      <h2>Focus Areas</h2>
+      <div class="focus" aria-label="Focus areas">
+        <span class="pill">Computer vision</span>
+        <span class="pill">Machine learning</span>
+        <span class="pill">Data augmentation</span>
+        <span class="pill">Synthetic data creation</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Team</h2>
+      <div class="team" aria-label="Team members">
+        <article class="member">
+          <div>
+            <h3>Matou&scaron; Cejnek</h3>
+            <p class="role">Postdoc</p>
+          </div>
+          <div class="profiles">
+            <a class="profile" href="https://github.com/matousc89">GitHub</a>
+          </div>
+        </article>
+        <article class="member">
+          <div>
+            <h3>Martin Vitou&scaron;ek</h3>
+            <p class="role">PhD Student</p>
+          </div>
+          <div class="profiles">
+            <a class="profile" href="https://www.linkedin.com/in/martin-vitousek">LinkedIn</a>
+            <a class="profile" href="https://github.com/Wentril">GitHub</a>
+          </div>
+        </article>
+        <article class="member">
+          <div>
+            <h3>Kate&rcaron;ina Kobrlov&aacute;</h3>
+            <p class="role">PhD Student</p>
+          </div>
+        </article>
+        <article class="member">
+          <div>
+            <h3>Michal Kucha&rcaron;</h3>
+            <p class="role">PhD Student</p>
+          </div>
+        </article>
+        <article class="member">
+          <div>
+            <h3>Serhii Andriievskyi</h3>
+            <p class="role">PhD Student</p>
+          </div>
+          <div class="profiles">
+            <a class="profile" href="https://www.linkedin.com/in/andriievskyi-serhii/">LinkedIn</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p class="contact"><strong>Email:</strong> <a href="mailto:matous.cejnek@fs.cvut.cz">matous.cejnek@fs.cvut.cz</a></p>
+      <p class="contact"><strong>Affiliation:</strong> <a href="https://control.fs.cvut.cz/en/">Department of Instrumentation and Control Engineering</a>, Faculty of Mechanical Engineering, Czech Technical University in Prague</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="y"></span> U12137 - Machine Vision Lab</p>
+  </footer>
+</div>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear()
+
+const marks = [...document.querySelectorAll('.mark')]
+if (marks.length && marks[0].animate) {
+  const idle = {opacity:.62,transform:'scale(.92)',boxShadow:'0 0 9px rgba(167,243,208,.32)'}
+  const lit = {opacity:1,transform:'scale(1.22)',boxShadow:'0 0 30px rgba(167,243,208,1)'}
+  const wait = ms => new Promise(resolve => setTimeout(resolve,ms))
+  const blink = (mark,duration) => mark.animate([
+    idle,
+    {offset:.18,...lit},
+    {offset:.58,...lit},
+    idle
+  ],{
+    duration,
+    easing:'cubic-bezier(.22,1,.36,1)'
+  }).finished
+  const patterns = [
+    async mark => {
+      await blink(mark,420)
+      await wait(120)
+      await blink(mark,420)
+      await wait(900 + Math.random() * 700)
+    },
+    async mark => {
+      await blink(mark,900)
+      await wait(1100 + Math.random() * 800)
+    },
+    async mark => {
+      await blink(mark,520)
+      await wait(440)
+      await blink(mark,780)
+      await wait(1000 + Math.random() * 700)
+    },
+    async mark => {
+      await wait(700 + Math.random() * 700)
+      await blink(mark,760)
+    },
+    async mark => {
+      await blink(mark,360)
+      await wait(110)
+      await blink(mark,360)
+      await wait(180)
+      await blink(mark,560)
+      await wait(130)
+      await blink(mark,420)
+      await wait(950 + Math.random() * 650)
+    },
+    async mark => {
+      const count = 3 + Math.floor(Math.random() * 3)
+      for (let i = 0; i < count; i++) {
+        await blink(mark,340 + Math.random() * 360)
+        await wait(100 + Math.random() * 240)
+      }
+      await wait(900 + Math.random() * 700)
+    },
+    async mark => {
+      await blink(mark,880)
+      await wait(160)
+      await blink(mark,380)
+      await wait(140)
+      await blink(mark,380)
+      await wait(1050 + Math.random() * 650)
+    }
+  ]
+
+  marks.forEach(mark => mark.animate([idle,idle],{duration:1,fill:'forwards'}))
+
+  async function pulseSignal(mark){
+    await wait(Math.random() * 1200)
+    while (true) {
+      await patterns[Math.floor(Math.random() * patterns.length)](mark)
+    }
+  }
+
+  async function synchronizedPulse(){
+    await wait(1800)
+    while (true) {
+      await wait(5200 + Math.random() * 6200)
+      const duration = 620 + Math.random() * 260
+      await Promise.all(marks.map(mark => blink(mark,duration)))
+      if (Math.random() > .45) {
+        await wait(160)
+        await Promise.all(marks.map(mark => blink(mark,420)))
+      }
+    }
+  }
+
+  marks.forEach(pulseSignal)
+  synchronizedPulse()
+}
+</script>
+</body>
+</html>
