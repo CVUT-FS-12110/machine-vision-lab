@@ -7,6 +7,7 @@ Practical computer vision and data pipeline design.
 We design real-time machine vision systems built to perform reliably in challenging environments. In parallel, we conduct research in applied AI and machine vision to advance practical solutions for real-world challenges.
 
 [Machine Vision Applications in Metallurgy](https://cvut-fs-12110.github.io/mv-metallurgy-showcase/)
+[Participation in Agricultural Research Projects](https://cvut-fs-12110.github.io/agriculture-showcase/)
 
 ## Focus Areas
 
