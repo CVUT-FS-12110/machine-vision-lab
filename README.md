@@ -32,6 +32,8 @@ We design real-time machine vision systems built to perform reliably in challeng
 - Serhii Andriievskyi
   - PhD Student
   - [LinkedIn](https://www.linkedin.com/in/andriievskyi-serhii/)
+- Tomáš Thoř
+  - [LinkedIn](https://www.linkedin.com/in/thortoma)
 
 ## Contact
 
