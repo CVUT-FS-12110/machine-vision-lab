@@ -33,6 +33,7 @@ We design real-time machine vision systems built to perform reliably in challeng
   - PhD Student
   - [LinkedIn](https://www.linkedin.com/in/andriievskyi-serhii/)
 - Tomáš Thoř
+  - PhD Student
   - [LinkedIn](https://www.linkedin.com/in/thortoma)
 
 ## Contact
